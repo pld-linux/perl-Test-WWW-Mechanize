@@ -7,13 +7,13 @@
 %define		pnam	WWW-Mechanize
 Summary:	Test::WWW-Mechanize - Testing-specific WWW::Mechanize subclass
 Name:		perl-Test-WWW-Mechanize
-Version:	1.20
-Release:	2
+Version:	1.22
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d385060891a9cfec5898c7ea95108aad
+# Source0-md5:	8a2b2078b8cd226c82101158a50630f9
 URL:		http://search.cpan.org/dist/Test-WWW-Mechanize/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
