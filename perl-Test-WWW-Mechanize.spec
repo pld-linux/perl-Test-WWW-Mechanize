@@ -8,7 +8,7 @@
 Summary:	Test::WWW-Mechanize - Testing-specific WWW::Mechanize subclass
 Name:		perl-Test-WWW-Mechanize
 Version:	1.22
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -20,12 +20,14 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Carp-Assert-More
 BuildRequires:	perl-Test-LongString
+BuildRequires:	perl(Test::Builder::Tester) >= 1.09
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Test::WWW::Mechanize is a subclass of WWW::Mechanize that incorporates features for web application testing.
+Test::WWW::Mechanize is a subclass of WWW::Mechanize that incorporates
+features for web application testing.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
