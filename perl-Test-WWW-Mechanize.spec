@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
 %define		pnam	WWW-Mechanize
-Summary:	Test::WWW-Mechanize - Testing-specific WWW::Mechanize subclass
+Summary:	Test::WWW::Mechanize - Testing-specific WWW::Mechanize subclass
+Summary(pl.UTF-8):	Test::WWW::Mechanize - podklasa WWW::Mechanize służąca do testów
 Name:		perl-Test-WWW-Mechanize
 Version:	1.22
 Release:	2
@@ -28,6 +29,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Test::WWW::Mechanize is a subclass of WWW::Mechanize that incorporates
 features for web application testing.
+
+%description -l pl.UTF-8
+Test::WWW::Mechanize to podlasa WWW::Mechanize zawierająca
+funkcjonalność przeznaczoną do testowania aplikacji WWW.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
