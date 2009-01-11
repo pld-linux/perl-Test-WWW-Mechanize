@@ -9,7 +9,7 @@ Summary:	Test::WWW::Mechanize - Testing-specific WWW::Mechanize subclass
 Summary(pl.UTF-8):	Test::WWW::Mechanize - podklasa WWW::Mechanize służąca do testów
 Name:		perl-Test-WWW-Mechanize
 Version:	1.22
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -46,6 +46,7 @@ funkcjonalność przeznaczoną do testowania aplikacji WWW.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Test/WWW/Mechanize
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -56,5 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_vendorlib}/Test/WWW/Mechanize.pm
+%{perl_vendorlib}/Test/WWW/*.pm
+%dir %{perl_vendorlib}/Test/WWW/Mechanize
 %{_mandir}/man3/*
