@@ -8,13 +8,13 @@
 Summary:	Test::WWW::Mechanize - Testing-specific WWW::Mechanize subclass
 Summary(pl.UTF-8):	Test::WWW::Mechanize - podklasa WWW::Mechanize służąca do testów
 Name:		perl-Test-WWW-Mechanize
-Version:	1.24
+Version:	1.52
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	40a7f3c1937fbcccaa07ef5473201514
+# Source0-md5:	3b21bf194ea8420aaf27bf7b972f919a
 URL:		http://search.cpan.org/dist/Test-WWW-Mechanize/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
