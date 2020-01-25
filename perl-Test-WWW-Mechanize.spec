@@ -2,7 +2,6 @@
 #Conditional build:
 %bcond_without	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
 %define		pnam	WWW-Mechanize
 Summary:	Test::WWW::Mechanize - Testing-specific WWW::Mechanize subclass
