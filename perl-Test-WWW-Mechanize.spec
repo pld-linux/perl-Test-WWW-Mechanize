@@ -8,7 +8,7 @@ Summary:	Test::WWW::Mechanize - Testing-specific WWW::Mechanize subclass
 Summary(pl.UTF-8):	Test::WWW::Mechanize - podklasa WWW::Mechanize służąca do testów
 Name:		perl-Test-WWW-Mechanize
 Version:	1.60
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
